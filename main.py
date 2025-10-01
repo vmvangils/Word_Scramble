@@ -2,11 +2,11 @@ import random
 from words import word_list
 
 def scramble(word):
-    characters = list(word)
-    scrambled = "".join(characters)
+    scrambled = word
     while scrambled == word:
-        random.shuffle(characters)
-        scrambled = "".join(characters)
+        characters = list(word)            # Verandert het naar een list
+        random.shuffle(characters)         # 'shuffle' het woord
+        scrambled = "".join(characters)    # Verandert het terug naar een string
     return scrambled
 
 def start_game():
