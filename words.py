@@ -1,0 +1,1 @@
+word_list = ["cat", "dog","duck", "horse", "goat"]
