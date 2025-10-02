@@ -4,6 +4,4 @@ word_list = [
     "star", "moon", "shoe", "bird", "pen",
     "surprise", "crab", "sunshine", "umbrella",
     "red", "deer", "energy", "dinosaur", "chest",
-    
-
 ]
