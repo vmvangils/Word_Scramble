@@ -17,12 +17,12 @@ def play_game():
         print(f"Unscramble this word: {scrambled}")
 
         start = time.time()
-        guess = input(f"Time left: {int(time_left)}seconds > ").lower().strip()
+        guess = input(f"Time left: {int(time_left)}seconds").strip().lower()
         elapsed = time.time() - start
         time_left -= elapsed
 
         if time_left <= 0:
-            print("Time's up!")
+            print("Out of time!")
             break
 
         if guess == word:
@@ -30,13 +30,13 @@ def play_game():
             score += 1
             time_left += 5
         else:
-            print("Wrong!")
+            print("Incorrect!")
             time_left -= 2
             if time_left <= 0:
-                print("Time's up!")
+                print("Out of time!")
                 break
 
-    print(f"Game over! Final score: {score}")
+    print(f"You lost! Final score: {score}")
 
 if __name__ == "__main__":
     play_game()
